@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Sid Dutta</title>
+  <meta name="description" content="Projects by Sid Dutta: PCB design at HyTech Racing, Huntington's disease protein design research, and the Window pen-pal app from HackGT 13.">
+  <meta name="theme-color" content="#e6d9c0">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Pinyon+Script&display=swap">
+  <link rel="stylesheet" href="css/style.css?v=7">
+  <script defer src="js/site.js?v=7"></script>
+  <noscript><style>.tabpanel[hidden] { display: block; margin-bottom: 3em; } .tabs-right { display: none; }</style></noscript>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top"><a class="brand" href="index.html">Sid Dutta</a></header>
+
+  <div class="book">
+    <nav class="tabs-left" aria-label="Main">
+      <a href="index.html"><span>Home</span></a>
+      <a href="about.html"><span>About</span></a>
+      <a href="projects.html" aria-current="page"><span>Projects</span></a>
+      <a href="goals.html"><span>Goals</span></a>
+      <a href="resume.html"><span>Resume</span></a>
+      <a href="hobbies.html"><span>Hobbies</span></a>
+    </nav>
+
+    <div class="tabs-right" role="tablist" aria-orientation="vertical" aria-label="Projects">
+      <button class="tab" role="tab" id="tab-discovery" aria-controls="panel-discovery" aria-selected="true" type="button"><span>Discovery</span></button>
+      <button class="tab" role="tab" id="tab-hytech-pcb" aria-controls="panel-hytech-pcb" aria-selected="false" tabindex="-1" type="button"><span>HyTech PCB</span></button>
+      <button class="tab" role="tab" id="tab-research" aria-controls="panel-research" aria-selected="false" tabindex="-1" type="button"><span>Research</span></button>
+      <button class="tab" role="tab" id="tab-window" aria-controls="panel-window" aria-selected="false" tabindex="-1" type="button"><span>Window</span></button>
+    </div>
+
+    <main class="page" id="main">
+      <header class="page-head">
+        <h1>Projects</h1>
+      </header>
+
+      <!-- DISCOVERY PROJECT: replace this panel with the full feature (The Problem, The Process, The Outcome) after the showcase. -->
+      <section class="tabpanel" role="tabpanel" id="panel-discovery" aria-labelledby="tab-discovery">
+        <article class="project text-only">
+          <div class="project-body">
+            <p class="status">Coming soon</p>
+            <h2>Discovery Project: lidar belt for blind users</h2>
+            <p>The full Discovery Project feature will be added after the showcase. The project is a belt with a lidar sensor and a microcontroller that detects people and objects and alerts the wearer with vibration. It uses 3D printing, embedded programming, and sensor data processing. I will prototype it this fall, test it in the spring, and get feedback from visually impaired users.</p>
+            <dl class="facts">
+              <dt>Parts</dt><dd>Lidar sensor, microcontroller, vibration alerts, 3D-printed housing</dd>
+              <dt>Resources</dt><dd>Hive Makerspace (3D printing, PCB fabrication, laser cutting) and the ECE instructional labs</dd>
+              <dt>Timeline</dt><dd>Prototype in fall 2026, test and refine in spring 2027</dd>
+            </dl>
+          </div>
+        </article>
+      </section>
+
+      <section class="tabpanel" role="tabpanel" id="panel-hytech-pcb" aria-labelledby="tab-hytech-pcb" hidden>
+        <article class="project">
+          <div class="project-body">
+            <h2>PCB design at HyTech Racing</h2>
+            <p>This project was part of electrical onboarding at HyTech Racing, Georgia Tech's Formula SAE electric race team. I designed a keychain PCB powered over USB-C. A 555 timer flashes an amber LED at a 53% duty cycle, set by the resistor and capacitor values.</p>
+            <p>I laid out the board in Altium Designer (first photo) and soldered components by hand (second photo).</p>
+            <dl class="facts">
+              <dt>Team</dt><dd>HyTech Racing electrical team</dd>
+              <dt>Built with</dt><dd>Altium Designer, 555 timer, USB-C</dd>
+            </dl>
+          </div>
+          <div class="media">
+            <figure class="snap tape-b tilt-r">
+              <img src="images/project-keychain-pcb.jpg" width="1200" height="960" loading="lazy" alt="A laptop screen showing a keychain circuit board layout in Altium Designer, with purple copper pours, labeled parts, and unrouted connection lines">
+              <figcaption>Board layout in Altium Designer. Photo: Sid Dutta</figcaption>
+            </figure>
+            <figure class="snap tape-c tilt-l">
+              <img src="images/project-soldering.jpg" width="1600" height="1067" loading="lazy" alt="Tweezers holding a tiny surface-mount part on a white circuit board with gold pads while a soldering iron tip touches the joint, against a blue background">
+              <figcaption>Soldering a small part onto a board.</figcaption>
+            </figure>
+          </div>
+        </article>
+      </section>
+
+      <section class="tabpanel" role="tabpanel" id="panel-research" aria-labelledby="tab-research" hidden>
+        <article class="project text-only">
+          <div class="project-body">
+            <h2>Research: protein design for Huntington's disease</h2>
+            <p>Summer 2025, UNC Wilmington and the NC School of Science and Math. We designed a protein as a possible Huntington's disease therapy, using regions of 2GSG that bind polyglutamine and a humanized 3EBA scaffold. The protein has four parts: an anti-transferrin receptor arm that delivers it into the brain, an intrabody that binds mutant huntingtin, a peptide linker, and a LAMP1 component that sends the captured protein to the lysosome.</p>
+            <p>I worked on codon optimization and plasmid design. The anti-TfR sequences went into a pET28 backbone for E. coli, and the other sequences went into a pIVTRup backbone for human cells. I also supported plasmid production and purification, presented the work at a university symposium, and co-authored a research paper.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="tabpanel" role="tabpanel" id="panel-window" aria-labelledby="tab-window" hidden>
+        <article class="project text-only">
+          <div class="project-body">
+            <h2>Window: a pen-pal app</h2>
+            <p>Window was my team's project at HackGT 13 in September 2026. Users pick a city they want to visit and are matched with someone who lives there. Each day they exchange a photo and a short voice note. AI translates the captions and voice notes and adds a note about local culture. A passport collects stamps from the places they have shared.</p>
+            <p>Hardware teammates built Raspberry Pi devices that show the partner's local sky and send a knock. I did the app's screens and visual design.</p>
+            <dl class="facts">
+              <dt>Team</dt><dd>Four people: two on software, two on hardware</dd>
+              <dt>Built with</dt><dd>Expo, React Native, Supabase, FastAPI, Raspberry Pi</dd>
+            </dl>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <footer class="foot">
+    <p class="signoff">Sid Dutta</p>
+    <p>Georgia Tech computer engineering, class of 2029. Photos by me unless noted.</p>
+    <div class="foot-links">
+      <a href="mailto:sidharth.dutta1234@gmail.com">Email</a>
+      <a href="https://github.com/sid-dutta">GitHub</a>
+      <a href="resume.html">Resume</a>
+    </div>
+  </footer>
+</body>
+</html>
